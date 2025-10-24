@@ -176,5 +176,8 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
                     modifier = Modifier.size(35.dp)
                 )
             }
+        }
+        Spacer(modifier = Modifier.height(25.dp))
+
     }
 }
