@@ -53,4 +53,9 @@ fun ActivityPertama(modifier: Modifier) {
         ){
             Row(){
                 val gambar = painterResource(id = R.drawable.logo)
-
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                )
