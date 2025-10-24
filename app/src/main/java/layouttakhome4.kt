@@ -55,5 +55,7 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
                 .size(170.dp)
                 .clip(CircleShape)
         )
+        Spacer(modifier = Modifier.height(13.dp))
+
     }
 }
