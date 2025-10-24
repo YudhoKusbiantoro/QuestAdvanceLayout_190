@@ -1,6 +1,7 @@
 package com.example.questadvancelayout
 
 import ActivityPertama
+import ProfileScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.questadvancelayout.ui.theme.QuestAdvanceLayoutTheme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestAdvanceLayoutTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ActivityPertama(
+                    ProfileScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -29,6 +31,9 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
