@@ -189,4 +189,38 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             shape = RoundedCornerShape(16.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
         ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 20.dp)
+            ) {
+
+                Icon(
+                    painter = painterResource(id = R.drawable.riwayat),
+                    contentDescription = "Privacy",
+                    tint = Color.White,
+                    modifier = Modifier.size(35.dp)
+                )
+                Spacer(modifier = Modifier.weight(1f))
+
+                Text(
+                    text = stringResource(id = R.string.rt),
+                    fontSize = 20.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Spacer(modifier = Modifier.weight(1f))
+
+                Spacer(modifier = Modifier.width(8.dp))
+
+                Icon(
+                    painter = painterResource(id = R.drawable.play),
+                    contentDescription = "Next",
+                    tint = Color.White,
+                    modifier = Modifier.size(35.dp)
+                )
+            }
+        }
+    }
 }
