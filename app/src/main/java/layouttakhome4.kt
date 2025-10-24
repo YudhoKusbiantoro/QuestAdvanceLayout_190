@@ -56,6 +56,58 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
                 .clip(CircleShape)
         )
         Spacer(modifier = Modifier.height(13.dp))
-
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(17.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.fb),
+                    contentDescription = "Facebook",
+                    modifier = Modifier.size(40.dp)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.google),
+                    contentDescription = "Crome",
+                    modifier = Modifier.size(40.dp)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.ig),
+                    contentDescription = "instagram",
+                    modifier = Modifier.size(40.dp)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.tiktok),
+                    contentDescription = "tiktok",
+                    modifier = Modifier.size(40.dp)
+                )
+            }
+        }
     }
 }
