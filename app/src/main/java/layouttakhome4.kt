@@ -134,5 +134,16 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(30.dp))
 
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            ),
+            shape = RoundedCornerShape(16.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+        ) {
+
     }
 }
