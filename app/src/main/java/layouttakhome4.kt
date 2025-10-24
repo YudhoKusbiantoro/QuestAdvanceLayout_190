@@ -110,6 +110,20 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             }
         }
         Spacer(modifier = Modifier.height(30.dp))
+        Text(
+            text = stringResource(id = R.string.nama),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+
+        Text(
+            text = stringResource(id = R.string.textnama),
+            fontSize = 16.sp,
+            color = Color.Gray
+        )
+
+        Spacer(modifier = Modifier.height(5.dp))
 
     }
 }
